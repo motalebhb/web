@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: skyblue;
+  margin: 0 auto;
+}
+
+h1{
+  margin:5px auto;
+  text-align: center;
+}
+
+.slider_main {
+  margin: 20px auto;
+  width: 1280px;
+  overflow: hidden;
+}
+.slider_area .slider {
+  position: relative;
+  animation-name: test;
+  width: 5120px;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition: 0.4s ease-in-out;
+}
+.slider_area .slider img {
+  background: url("/vscode_web/images/main1.jpg");
+  height: 300px;
+  float: left;
+  width: 1280px;
+  transition: 0.4s;
+}
+
+@keyframes test {
+
+  0% {
+    left: -0px;
+    transition: 0.4s;
+  }
+  50% {
+    left: -1280px;
+  }
+  75% {
+    left: -2560px;
+  }
+  100% {
+    left: -3840px;
+    transition: 0.4s;
+  }
+  0% {
+    left: -0px;
+    transition: 0.4s;
+  }
+}
