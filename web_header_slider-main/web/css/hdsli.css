@@ -1,0 +1,87 @@
+body{
+    font-family: poppins;
+
+}
+
+.main {
+  width: 960px;
+  margin: 20px auto;
+  overflow: hidden;
+
+}
+.header_section {
+  width: 100%;
+  background-color: rgb(2, 78, 65);
+  height: 100px;
+}
+.logo_section {
+  width: 50%;
+  float: left;
+}
+.logo_section button {
+  background-color: rgb(165, 233, 165);
+  border-radius: 100px;
+  color: rgb(39, 26, 219);
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px;
+  transition: 0.4s;
+  /* margin:3px; */
+  margin: 30px 30px 30px;
+}
+.logo_section button:hover {
+  background-color: rgb(235, 123, 19);
+  color: #fff;
+}
+.menu_section {
+  padding: 10px;
+}
+.menu_section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu_section ul li {
+  float: left;
+  padding: 10px;
+}
+.menu_section ul li a {
+  text-decoration: none;
+  /* background-color: rgb(206, 165, 233); */
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(243, 241, 227);
+  transition: 0.4s;
+}
+.menu_section ul li a:hover {
+  background-color: rgb(6, 94, 75);
+  color: rgb(15, 180, 180);
+  border-radius: 100px;
+  padding: 12px;
+}
+
+.item img{
+    width: 100%;
+    height: 200px;
+    content: '';
+    clear: both;
+    display: block;
+    float: left;
+}
+ .slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 960px;
+}
+
+@media (max-width: 767px){
+  .main{
+  width: 100%;
+}
+
+}
