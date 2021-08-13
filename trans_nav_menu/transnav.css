@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background:url(/vscode_web/images/slider3.jpg);
+  
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+  
+}
+.header_area {
+  height: 100px;
+  background: rgba(25, 25, 25, 0.7);
+}
+
+.logo h1 {
+  width: 150px;
+  position: absolute;
+  left: 12%;
+  float: left;
+  top: 17px;
+  color: #fff;
+}
+
+.nav_menu {
+  background-color: orangered;
+}
+.nav_menu ul {
+  float: right;
+  margin-right: 25px;
+}
+.nav_menu ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+.nav_menu ul li a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+}
+
+.nav_menu ul li a:before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+.nav_menu ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (max-width: 860px) {
+  .nav_menu ul {
+    margin: 25px;
+  }
+  .nav_menu ul li a {
+    font-size: 12px;
+  }
+  .logo h1 {
+    margin: 0px 110px;
+  }
+}
