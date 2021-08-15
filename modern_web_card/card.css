@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(/images/slider2.jpg);
+}
+
+.continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: skyblue;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  transition: 0.6s;
+  box-shadow: 1px 1px 1px black;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 3px 3px 3px #fff;
+}
+
+.card img {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 90px;
+  border-radius: 100%;
+  border: 2px solid rgb(11, 48, 170);
+}
+
+.text h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5px;
+  font-size: 17px;
+  font-family: operator mono;
+}
+
+.para p {
+  text-align: justify;
+  margin: 5px;
+}
+
+.card::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  background: #000;
+  position: absolute;
+  opacity: 0.5;
+  transition: 0.6s;
+}
+
+.card::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: #000;
+  position: absolute;
+  opacity: 0.5;
+  transition: 0.6s;
+}
+
+.card:hover::before {
+  height: 0;
+}
+
+.card:hover::after {
+  height: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .continer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
